@@ -9,10 +9,10 @@ use App\Models\Book;
 class BookController extends Controller
 {
     /*public function index(){
-        $data = DB::table('books')->select('id', 'isbn',
-        'title', 'author', 'description',
-        'date_published')->get();
-        DD($data);
+        $data = DB::table('books')
+        -> select('id', 'isbn', 'title', 'author', 'description', 'date_published')
+        -> get();
+        dd($data);
         return view('books.index', ['books' => $data]);
     }*/
     function show(){
